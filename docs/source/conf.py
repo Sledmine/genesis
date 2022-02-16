@@ -2,9 +2,9 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'Genesis'
+copyright = '2021, Shadowmods'
+author = 'Shadowmods'
 
 release = '0.1'
 version = '0.1.0'
@@ -17,6 +17,8 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
+    'myst_parser',
+    'sphinx_rtd_dark_mode'
 ]
 
 intersphinx_mapping = {
