@@ -3,7 +3,7 @@
 # -- Project information
 
 project = 'Genesis'
-copyright = '2021, Shadowmods'
+copyright = '2022, Shadowmods'
 author = 'Shadowmods'
 
 release = '0.1'
