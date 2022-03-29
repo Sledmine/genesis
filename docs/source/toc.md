@@ -3,6 +3,6 @@
 :maxdepth: 1
 :glob:
 
-gettingstarted
-tools
+gettingstarted/*
+tags/*
 ```
