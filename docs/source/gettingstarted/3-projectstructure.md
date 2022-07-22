@@ -7,12 +7,12 @@ al juego como scripting de Lua, generación de paquetes de Mercury, pertenecer a
 GitHub o similar, la lista de carpetas a continuación debería de ser suficiente para cubrir tus
 necesidades:
 
-| Nombre de la carpeta |                                          Descripción |
-| :------------------- | ---------------------------------------------------: |
-| data                 | Archivos fuente que generalmente se compilan en tags |
-| tags                 |                                                 TODO |
-| hek                  |                                                 TODO |
-| maps (symlink)       |                                                 TODO |
+| Nombre de la carpeta |                                                                        Descripción |
+| :------------------- | ---------------------------------------------------------------------------------: |
+| data                 |                               Archivos fuente que generalmente se compilan en tags |
+| tags                 |        Archivos que conforman un mapa netamente, modelos, sonidos, interfaces, etc |
+| hek                  |         Carpeta que contiene las herramientas de legado HEK, Guerilla, Sapien, etc |
+| maps (symlink)       | Enlace simbolico que simplifica el acceder a la carpeta de mapas destino del juego |
 
 
 ```{important}
@@ -28,18 +28,21 @@ a clonar el proyecto usando [Git](https://www.atlassian.com/es/git/tutorials/wha
 git clone https://github.com/MasterChief117/SuperHaloProject
 cd SuperHaloProject
 ```
-| Nombre de la carpeta |                                          Descripción |
-| :------------------- | ---------------------------------------------------: |
-| data                 | Archivos fuente que generalmente se compilan en tags |
-| tags                 |                                                 TODO |
-| hek                  |                                                 TODO |
-| maps (symlink)       |                                                 TODO |
-| lua                  |                                                 TODO |
-| hsc                  |                                                 TODO |
+| Nombre de la carpeta |                                                                        Descripción |
+| :------------------- | ---------------------------------------------------------------------------------: |
+| data                 |                               Archivos fuente que generalmente se compilan en tags |
+| tags                 |        Archivos que conforman un mapa netamente, modelos, sonidos, interfaces, etc |
+| hek                  |         Carpeta que contiene las herramientas de legado HEK, Guerilla, Sapien, etc |
+| maps (symlink)       | Enlace simbolico que simplifica el acceder a la carpeta de mapas destino del juego |
+| lua                  |          Contiene código fuente relacionado con Lua, scripts, modulos, tablas, etc |
+| hsc                  |               Contiene código fuente relacionado con HSC (Halo Scripting Language) |
+
 
 Algunos archivos opcionales que cumplen un proposito en el estándar de proyectos integrados con Git
 son:
-- .gitignore
-- .gitkeep
-- build.yaml
-- bundle.json
+| Nombre del archivo |                                                                                             Descripción |
+| :----------------- | ------------------------------------------------------------------------------------------------------: |
+| .gitignore         |                                          Especifica que archivos del repositorio de Git serán ignorados |
+| .gitkeep           |                       Permite conservar una carpeta que no contenga archivos para que Git no la elimine |
+| build.yaml         |                             Describe cómo construir el proyecto en la nube para fines de automatización |
+| bundle.json        | Describe cómo "compilar" un proyecto Lua con sus diferentes dependencias en un solo script distribuible |
